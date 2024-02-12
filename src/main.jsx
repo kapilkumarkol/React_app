@@ -17,6 +17,7 @@ import ErrorPage from "./ErrorPage.jsx";
 import UserList from "./UserList.jsx";
 
 const router = createBrowserRouter([
+  { path: "/", element: <App />, errorElement: <ErrorPage /> },
   { path: "/login", element: <Login />, errorElement: <ErrorPage /> },
   { path: "/register", element: <Register />, errorElement: <ErrorPage /> },
   { path: "/user-list", element: <UserList />, errorElement: <ErrorPage /> },
